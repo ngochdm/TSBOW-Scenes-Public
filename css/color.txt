@@ -1,0 +1,38 @@
+Main Color
+    Navy		#000080
+    White       #FFFFFF
+
+
+Neon Palettes
+    Neon Green 	#33CCCC 
+    Neon Blue 	#33CCFF 
+    Neon Purple	#6699FF
+    Neon Yellow	#FFCC00 
+    Neon Orange	#FF6600 
+    Neon Red	#FF0066
+
+
+Navy Palettes (Ocean Depths)
+    Deep Navy       #001F3F
+    Navy            #000080
+    Vibrant Blue    #0074D9
+    Light Blue      #7FDBFF
+    Light teal      #39CCCC
+    Cool Green      #3D9970
+    Vibrant Green   #2ECC40
+
+
+Light Colors in Figure Background
+    Alto            #d9d9d9
+    Apricot Peach   #f8cbad
+    Cadet Blue      #adb9ca
+    Cream Brulee    #ffe699
+    French Lilac    #e1ccf0
+    Spindle         #bdd7ee
+    Sprout          #c5e0b4
+    Your Pink       #ffbdbd
+
+
+
+Other Palettes
+-> Upcoming...
