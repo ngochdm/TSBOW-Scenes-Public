@@ -1,21 +1,25 @@
-# Filter-Scenes-in-TSBOW
+# Filter Scenes in TSBOW
 
-Web-based interface for filtering all scenes in the TSBOW dataset according to individual attributes.
+A lightweight web interface for browsing and filtering scene samples from the TSBOW dataset by weather, scenario, road type, and scale.
 
-
-
-## How to RUN
+![Example UI](images/Example_UI.png)
 
 
-<!-- ### Website
 
-https://ngochdm.github.io/TSBOW-Scenes-Public/ -->
+## Website
 
-### Offline
+The online demo is available at:
+
+https://ngochdm.github.io/TSBOW-Scenes-Public/
+
+
+
+## Run Locally
+
+Clone or open this repository, then start a local HTTP server from the project root:
 
 ```bash
-cd Filter-Scenes-TSBOW/
-
+cd TSBOW-Scenes-Public
 python -m http.server 8000  # Start a local HTTP server
 ```
 
@@ -23,9 +27,13 @@ Open your browser and navigate to:
 
 http://localhost:8000/index.html
 
+A **local HTTP server is recommended** because the page loads `TSBOW_info.csv` using JavaScript.
+
 
 
 ## Scenes Filtering
+
+The interface supports filtering scenes by the following attributes:
 
 1. Weather: All, Normal, Haze, Rain, Snow
 
@@ -35,18 +43,26 @@ http://localhost:8000/index.html
 
 4. Scale: All, Fine, Medium, Coarse
 
-Click on `FILTER` button after chosing the filtering values.
+Select the desired attributes and click the `FILTER` button to display matching scenes.
 
 
 
-## TSBOW_info.csv
+## Dataset Metadata
 
-The `TSBOW_info.csv` file includes column name: `videoID`, `scenario`, `daytime`, `weather`, `scale`, `roadtype`, `duration`.
+Scene metadata is stored in `TSBOW_info.csv`.
 
-Please check the order of column name in csv file with the filter data in `main.js`
+The CSV file uses the following column order: 
+
+```text
+VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION
+```
+
+<!-- `videoID`, `scenario`, `daytime`, `weather`, `scale`, `roadtype`, `duration`. -->
+
+The filtering logic in `js/main.js` expects the same order:
 
 ```js
-const filteredData = data.filter(row => {
-            const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
-})
+const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
 ```
+
+If the CSV structure changes, update the parsing logic in `js/main.js` accordingly.
