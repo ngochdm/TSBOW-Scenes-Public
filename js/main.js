@@ -198,13 +198,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const response = await fetch('TSBOW_info.csv');
         const csvText = await response.text();
-        const rows = csvText.split('\n').map(row => row.split(','));
+        const rows = csvText.trim().split('\n').map(row => row.split(','));
 
         const header = rows[0];
         const data = rows.slice(1);
 
         const filteredData = data.filter(row => {
-            const [videoID, scenario, daytime, weather, scale, roadtype, duration, roi] = row;
+            const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
             
             return (filters.weather === 'all' || weather[0] === filters.weather) &&
                    (filters.scenario === 'all' || scenario[0] === filters.scenario) &&
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const imageContainer = document.getElementById('image-container');
         imageContainer.innerHTML = '';
 
-        filteredData.forEach(([videoID, scenario, daytime, weather, scale, roadtype, duration, fps]) => {
+        filteredData.forEach(([videoID, scenario, daytime, weather, scale, roadtype, duration]) => {
             const img = document.createElement('img');
             img.src = `scenes/${encodeURIComponent(videoID)}.png`;
             img.alt = videoID;
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
             caption1.style.marginTop = '10px';
 
             const caption2 = document.createElement('div');
-            caption2.textContent = `Sn: ${scenario}, D: ${daytime}, W: ${weather}, Sl: ${scale}, R: ${roadtype}, F: ${fps}`;
+            caption2.textContent = `Sn: ${scenario}, D: ${daytime}, W: ${weather}, Sl: ${scale}, R: ${roadtype}`;
             caption2.style.textAlign = 'center';
             caption2.style.fontSize = '0.8em';
 

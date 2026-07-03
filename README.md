@@ -1,5 +1,6 @@
-# Filter-Scenes-TSBOW
-This repo is used for build html filtering scenes in TSBOW dataset
+# Filter-Scenes-in-TSBOW
+
+Web-based interface for filtering all scenes in the TSBOW dataset according to individual attributes.
 
 
 
@@ -33,12 +34,12 @@ Click on `FILTER` button after chosing the filtering values.
 
 ## TSBOW_info.csv
 
-The `TSBOW_info.csv` file includes column name: `videoID`, `scenario`, `daytime`, `weather`, `scale`, `roadtype`, `duration`, `roi`.
+The `TSBOW_info.csv` file includes column name: `videoID`, `scenario`, `daytime`, `weather`, `scale`, `roadtype`, `duration`.
 
 Please check the order of column name in csv file with the filter data in `main.js`
 
 ```js
 const filteredData = data.filter(row => {
-            const [videoID, scenario, daytime, weather, scale, roadtype, duration, roi] = row;
+            const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
 })
 ```
