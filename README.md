@@ -6,6 +6,13 @@ Web-based interface for filtering all scenes in the TSBOW dataset according to i
 
 ## How to RUN
 
+
+<!-- ### Website
+
+https://ngochdm.github.io/TSBOW-Scenes-Public/ -->
+
+### Offline
+
 ```bash
 cd Filter-Scenes-TSBOW/
 
