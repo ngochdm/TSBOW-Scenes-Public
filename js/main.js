@@ -173,6 +173,37 @@ window.addEventListener("scroll", () => {
 
 
 
+// MARK: Theme
+
+const themeToggle = document.getElementById("themeToggle");
+
+function setTheme(theme) {
+    const isNight = theme === "night";
+
+    document.body.classList.toggle("theme-night", isNight);
+    localStorage.setItem("theme", theme);
+
+    themeToggle.setAttribute(
+        "aria-label",
+        isNight ? "Switch to day theme" : "Switch to night theme"
+    );
+
+    themeToggle.setAttribute("aria-pressed", String(isNight));
+}
+
+const savedTheme = localStorage.getItem("theme") || "day";
+setTheme(savedTheme);
+
+themeToggle.addEventListener("click", () => {
+    const nextTheme = document.body.classList.contains("theme-night")
+        ? "day"
+        : "night";
+
+    setTheme(nextTheme);
+});
+
+
+
 // MARK: FILTER
 
 document.addEventListener('DOMContentLoaded', () => {
