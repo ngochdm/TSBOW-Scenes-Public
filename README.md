@@ -1,3 +1,25 @@
+<!-- 
+__        _______ _     ____ ___  __  __ _____ 
+\ \      / / ____| |   / ___/ _ \|  \/  | ____|
+ \ \ /\ / /|  _| | |  | |  | | | | |\/| |  _|  
+  \ V  V / | |___| |__| |__| |_| | |  | | |___ 
+   \_/\_/  |_____|_____\____\___/|_|  |_|_____|
+                                   
+ _____ ___  
+|_   _/ _ \ 
+  | || | | |
+  | || |_| |
+  |_| \___/ 
+            
+
+ _____ ____  ____   _____        __
+|_   _/ ___|| __ ) / _ \ \      / /
+  | | \___ \|  _ \| | | \ \ /\ / / 
+  | |  ___) | |_) | |_| |\ V  V /  
+  |_| |____/|____/ \___/  \_/\_/   
+                                   
+-->
+
 # Filter Scenes in TSBOW
 
 A lightweight web interface for browsing and filtering scene samples from the TSBOW dataset by weather, scenario, road type, and scale.
@@ -64,13 +86,13 @@ Press `Ctrl+C` in the terminal to stop the server.
 
 The interface supports filtering scenes by the following attributes:
 
-1. Weather: All, Normal, Haze, Rain, Snow
+1. **Weather**: All, Normal, Haze, Rain, Snow
 
-2. Scenario: All, Road, Intersection, Special Cases, Disaster
+2. **Scenario**: All, Road, Intersection, Special Cases, Disaster
 
-3. Road Type: All, Urban, Standard, Boulevard
+3. **Road Type**: All, Urban, Standard, Boulevard
 
-4. Scale: All, Fine, Medium, Coarse
+4. **Scale**: All, Fine, Medium, Coarse
 
 Select the desired attributes and click the `FILTER` button to display matching scenes.
 
