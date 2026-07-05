@@ -35,12 +35,12 @@ A lightweight web interface for browsing and filtering scene samples from the TS
 <br> 
 
 <div align="center">
-  <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc&logo=githubpages" style="height: 16px;"></a>  
-  <a href="https://doi.org/10.1609/aaai.v40i7.37439"><img src="https://img.shields.io/static/v1?label=DOI&message=AAAI-26&color=green" style="height: 16px;"></a>  
-  <a href="https://arxiv.org/abs/2602.05414"><img src="https://img.shields.io/static/v1?label=Suppl.&message=arXiv&color=FF0066&logo=arxiv" style="height: 16px;"></a>  
+  <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc&logo=githubpages" style="height: 20px;"></a>  
+  <a href="https://doi.org/10.1609/aaai.v40i7.37439"><img src="https://img.shields.io/static/v1?label=DOI&message=AAAI-26&color=green" style="height: 20px;"></a>  
+  <a href="https://arxiv.org/abs/2602.05414"><img src="https://img.shields.io/static/v1?label=Suppl.&message=arXiv&color=FF0066&logo=arxiv" style="height: 20px;"></a>  
   <!-- <br> -->
-  <a href="https://github.com/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Code&message=Github&color=6699FF&logo=github" style="height: 16px;"></a>   
-  <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=FF6600&logo=huggingface" style="height: 16px;"></a>  
+  <a href="https://github.com/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Code&message=Github&color=6699FF&logo=github" style="height: 20px;"></a>   
+  <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=FF6600&logo=huggingface" style="height: 20px;"></a>  
 </div>
 
 <br>
