@@ -51,16 +51,6 @@ cd Filter-Scenes-TSBOW/
 ./local_open_TSBOW_filter_scenes.sh
 ```
 
-By default, the viewer opens in your default browser at:
-
-> http://localhost:8000/index.html
-
-To use another port:
-
-```bash
-./local_open_TSBOW_filter_scenes.sh 8080
-```
-
 or
 
 ```bash
@@ -71,9 +61,16 @@ cd Filter-Scenes-TSBOW/
 ```
 
 Then, open your browser and navigate to:
+> http://localhost:8000/index.html
 
-http://localhost:8000/index.html
+By default, the viewer opens in your default browser at:
+> http://localhost:8000/index.html
 
+To use another port:
+```bash
+
+./local_open_TSBOW_filter_scenes.sh 8080
+```
 
 A **local HTTP server is recommended** because the page loads `TSBOW_info.csv` using JavaScript.
 Press `Ctrl+C` in the terminal to stop the server.
