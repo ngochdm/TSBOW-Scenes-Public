@@ -28,6 +28,36 @@ A lightweight web interface for browsing and filtering scene samples from the TS
 
 
 
+<!-- MARK: Intro -->
+
+## 🌍 About TSBOW
+
+<br> 
+
+<div align="center">
+  <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc&logo=githubpages" style="height: 16px;"></a>  
+  <a href="https://doi.org/10.1609/aaai.v40i7.37439"><img src="https://img.shields.io/static/v1?label=DOI&message=AAAI-26&color=green" style="height: 16px;"></a>  
+  <a href="https://arxiv.org/abs/2602.05414"><img src="https://img.shields.io/static/v1?label=Suppl.&message=arXiv&color=FF0066&logo=arxiv" style="height: 16px;"></a>  
+  <!-- <br> -->
+  <a href="https://github.com/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Code&message=Github&color=6699FF&logo=github" style="height: 16px;"></a>   
+  <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=FF6600&logo=huggingface" style="height: 16px;"></a>  
+</div>
+
+<br>
+
+**Comprehensive, annotated dataset for object detection.**
+This dataset consists of over 32 hours of real-world traffic surveillance data across 71 CCTV and an additional color cameras, spanning annual weather conditions ([See Demo Videos](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html)). 
+
+The TSBOW dataset is publicly available at [TSBOW Github](https://github.com/SKKUAutoLab/TSBOW).
+
+- *<span style="color: #FFCC00; font-weight: bold;">Hardware</span>*: CCTV system + color camera. 
+- *<span style="color: #33CCCC; font-weight: bold;">Tasks</span>:* Object Detection.
+- *<span style="color: #FF6600; font-weight: bold;">Position</span>:* South Korea. 
+- *<span style="color: #6699FF; font-weight: bold;">Weather</span>:* sunny/cloudy, haze, rain, snow. 
+- *<span style="color: #FF0066; font-weight: bold;">Daytime</span>:* day.
+
+
+
 <!-- MARK: Website -->
 
 ## 🌐 Website
@@ -116,23 +146,6 @@ const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
 ```
 
 If the CSV structure changes, update the parsing logic in `js/main.js` accordingly.
-
-
-
-<!-- MARK: Intro -->
-
-## 🌍 About TSBOW
-
-**Comprehensive, annotated dataset for object detection.**
-This dataset consists of over 32 hours of real-world traffic surveillance data across 71 CCTV and an additional color cameras, spanning annual weather conditions ([See Demo Videos](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html)). 
-
-The TSBOW dataset is publicly available at [TSBOW Github](https://github.com/SKKUAutoLab/TSBOW).
-
-- *<span style="color: #FFCC00; font-weight: bold;">Hardware</span>*: CCTV system + color camera. 
-- *<span style="color: #33CCCC; font-weight: bold;">Tasks</span>:* Object Detection.
-- *<span style="color: #FF6600; font-weight: bold;">Position</span>:* South Korea. 
-- *<span style="color: #6699FF; font-weight: bold;">Weather</span>:* sunny/cloudy, haze, rain, snow. 
-- *<span style="color: #FF0066; font-weight: bold;">Daytime</span>:* day.
 
 
 
