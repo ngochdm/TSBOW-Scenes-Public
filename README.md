@@ -6,7 +6,9 @@ A lightweight web interface for browsing and filtering scene samples from the TS
 
 
 
-## Website
+<!-- MARK: Website -->
+
+## 🌐 Website
 
 The online demo is available at:
 
@@ -14,7 +16,9 @@ https://ngochdm.github.io/TSBOW-Scenes-Public/
 
 
 
-## Run Locally
+<!-- MARK: Local run -->
+
+## 🚀 Run Locally
 
 Clone or open this repository, then start a local HTTP server from the project root:
 
@@ -31,7 +35,9 @@ A **local HTTP server is recommended** because the page loads `TSBOW_info.csv` u
 
 
 
-## Scenes Filtering
+<!-- MARK: Attribute -->
+
+## 🎬 Scenes Filtering
 
 The interface supports filtering scenes by the following attributes:
 
@@ -47,7 +53,9 @@ Select the desired attributes and click the `FILTER` button to display matching 
 
 
 
-## Dataset Metadata
+<!-- MARK: Metadata -->
+
+## 📄 Dataset Metadata
 
 Scene metadata is stored in `TSBOW_info.csv`.
 
