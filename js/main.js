@@ -129,7 +129,7 @@ let prevScrollPos = window.scrollY;
 window.addEventListener("scroll", () => {
 const currentScrollPos = window.scrollY;
 
-if (currentScrollPos > 800) // 👈 only start showing after 800px down
+if (currentScrollPos > 390) // 👈 only start showing after 390 px down
 { 
     if (prevScrollPos > currentScrollPos) 
     {
