@@ -23,15 +23,38 @@ https://ngochdm.github.io/TSBOW-Scenes-Public/
 Clone or open this repository, then start a local HTTP server from the project root:
 
 ```bash
-cd TSBOW-Scenes-Public
-python -m http.server 8000  # Start a local HTTP server
+cd Filter-Scenes-TSBOW/
+
+# Start the local server and open the viewer
+./local_open_TSBOW_filter_scenes.sh
 ```
 
-Open your browser and navigate to:
+By default, the viewer opens in your default browser at:
+
+> http://localhost:8000/index.html
+
+To use another port:
+
+```bash
+./local_open_TSBOW_filter_scenes.sh 8080
+```
+
+or
+
+```bash
+cd Filter-Scenes-TSBOW/
+
+# Start the local server and open the viewer
+./local_run_TSBOW_filter_scenes.sh
+```
+
+Then, open your browser and navigate to:
 
 http://localhost:8000/index.html
 
+
 A **local HTTP server is recommended** because the page loads `TSBOW_info.csv` using JavaScript.
+Press `Ctrl+C` in the terminal to stop the server.
 
 
 
