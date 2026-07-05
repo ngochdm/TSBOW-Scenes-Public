@@ -66,3 +66,15 @@ const [videoID, scenario, daytime, weather, scale, roadtype, duration] = row;
 ```
 
 If the CSV structure changes, update the parsing logic in `js/main.js` accordingly.
+
+
+
+<!-- MARK: Contact -->
+
+## 📧 Contact
+
+**For any inquiries regarding this work, please contact:**
+
+- Name: `Huynh Doan Minh Ngoc` 
+
+- Email: ngochdm@gmail.com / ngochdm@skku.edu
