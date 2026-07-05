@@ -102,6 +102,11 @@ section::before {
   margin-top: 9px;
 }
 
+/* night: body.theme-night .theme-accent-text */
+.theme-accent-text {
+  color: #000080;
+}
+
 /* Video spacing */
 .video-container {
   margin-top: 30px;
