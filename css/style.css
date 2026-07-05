@@ -505,4 +505,137 @@ body {
 
 
 
+/* MARK: Theme */
+
+.theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 0;   /*24px*/
+  padding: 6px;
+}
+
+.theme-switch-track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72px;
+  height: 36px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #eaf2ff;
+  box-shadow: inset 0 0 0 2px rgba(0, 31, 63, 0.18);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.theme-switch-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  transform: none;
+  margin: 0;
+}
+
+.theme-switch-knob {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 7px rgba(0, 31, 63, 0.3);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.theme-toggle:hover .theme-switch-track {
+  box-shadow: inset 0 0 0 2px rgba(255, 204, 0, 0.7);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+body.theme-night .theme-switch-track {
+  background: #14243a;
+  box-shadow: inset 0 0 0 2px rgba(124, 199, 255, 0.35);
+}
+
+body.theme-night .theme-switch-knob {
+  transform: translateX(36px);
+  background: #eaf2ff;
+}
+
+/* background page container */
+body.theme-night {
+  background: #07111F !important;
+  color: #eaf2ff;
+}
+
+/* page container */
+body.theme-night .w3-white {
+  background: #07111F !important;  /* 0f1b2d*/
+  color: #eaf2ff !important;
+}
+
+body.theme-night #scrollHeader,
+body.theme-night .footer {
+  background: #020817;
+}
+
+body.theme-night p,
+body.theme-night h1,
+body.theme-night h2,
+body.theme-night h3,
+body.theme-night h4,
+body.theme-night h5,
+body.theme-night .para-bi-margin,
+body.theme-night .caption-figtab {
+  color: #eaf2ff !important;
+}
+
+body.theme-night h1 {
+  color: #FFD84D !important;
+}
+
+body.theme-night h2 {
+  color: #FFD84D !important;
+}
+
+body.theme-night a {
+  color: #7CC7FF;
+}
+
+/* day: .theme-accent-text */
+body.theme-night .theme-accent-text {
+  color: #AFCBFF;
+}
+
+/* day: .datasets-comparison-details */
+body.theme-night .datasets-comparison-details {
+  background-color: #0f1b2d;
+  border-color: #24364f;
+  color: #eaf2ff;
+}
+
+body.theme-night .datasets-comparison-details[open] {
+  background-color: #0f1b2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+body.theme-night .datasets-comparison-details summary {
+  color: #eaf2ff;
+}
+
+body.theme-night .datasets-comparison-details .w3-white {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+
 /* End of style.css */
