@@ -277,3 +277,90 @@ document.addEventListener('DOMContentLoaded', () => {
         resultCountElement.textContent = `${filteredData.length} videos`;
     });
 });
+
+
+
+// MARK: Attribute descriptions
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterControls = Array.from(
+        document.querySelectorAll(".filter-info-btn")
+    )
+        .map((button) => {
+            const descriptionId = button.getAttribute("aria-controls");
+            const description = document.getElementById(descriptionId);
+
+            return {
+                button,
+                description
+            };
+        })
+        .filter((control) => control.description);
+
+    if (filterControls.length === 0) {
+        return;
+    }
+
+    function closeAllDescriptions(exceptControl = null) {
+        filterControls.forEach((control) => {
+            if (control === exceptControl) {
+                return;
+            }
+
+            control.description.hidden = true;
+            control.button.setAttribute("aria-expanded", "false");
+        });
+    }
+
+    function setDescriptionOpen(control, isOpen) {
+        if (isOpen) {
+            // Keep only one description open at a time.
+            closeAllDescriptions(control);
+        }
+
+        control.description.hidden = !isOpen;
+        control.button.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    filterControls.forEach((control) => {
+        control.button.addEventListener("click", () => {
+            const isCurrentlyOpen = !control.description.hidden;
+
+            setDescriptionOpen(control, !isCurrentlyOpen);
+        });
+    });
+
+    document.addEventListener("click", (event) => {
+        const clickedElement = event.target;
+
+        if (!(clickedElement instanceof Node)) {
+            return;
+        }
+
+        const clickedInsideAFilterControl = filterControls.some((control) => {
+            return (
+                control.button.contains(clickedElement) ||
+                control.description.contains(clickedElement)
+            );
+        });
+
+        if (!clickedInsideAFilterControl) {
+            closeAllDescriptions();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") {
+            return;
+        }
+
+        const openControl = filterControls.find(
+            (control) => !control.description.hidden
+        );
+
+        if (openControl) {
+            closeAllDescriptions();
+            openControl.button.focus();
+        }
+    });
+});
