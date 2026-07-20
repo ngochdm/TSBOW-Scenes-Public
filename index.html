@@ -394,16 +394,37 @@
                                 </div>
 
                                 <!-- SCALE -->
-                                <div style="display: flex; flex-direction: column; align-items: center;">
-                                    <a class="btn" id="scale-btn" style="background:#001F3F; color: #FFFFFF;">
+                                <!-- MARK: scale -->
+                                <div class="filter-option">
+                                    <button
+                                        class="btn filter-info-btn"
+                                        id="scale-btn"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="scale-description"
+                                        style="background:#001F3F; color:#FFFFFF;"
+                                    >
                                         <span>📏 SCALE 📏</span>
-                                    </a>
+                                    </button>
+
                                     <select id="scale" class="scale-filter">
                                         <option value="all">All</option>
                                         <option value="fine">Fine</option>
                                         <option value="medium">Medium</option>
                                         <option value="coarse">Coarse</option>
                                     </select>
+
+                                    <div
+                                        id="scale-description"
+                                        class="filter-description"
+                                        role="region"
+                                        aria-label="Scale description"
+                                        hidden
+                                    >
+                                        <p class="filter-description-text">
+                                            Scale description will be added here.
+                                        </p>
+                                    </div>
                                 </div>
 
                                 <div class="w3-center" style="margin-top: 10px; margin-bottom: 20px;">
