@@ -231,7 +231,9 @@
 
                         <div class="w3-center resources" style="margin-top: 11px; margin-bottom: 25px;">
                             <div class="button-group" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                                
                                 <!-- WEATHER -->
+                                <!-- MARK: weather -->
                                 <div class="filter-option">
                                     <button
                                         class="btn filter-info-btn"
@@ -287,10 +289,19 @@
                                 </div>
 
                                 <!-- SCENARIO -->
-                                <div style="display: flex; flex-direction: column; align-items: center;">
-                                    <a class="btn" id="scenario-btn" style="background:#001F3F; color: #FFFFFF;">
+                                <!-- MARK: scenario -->
+                                <div class="filter-option">
+                                    <button
+                                        class="btn filter-info-btn"
+                                        id="scenario-btn"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="scenario-description"
+                                        style="background:#001F3F; color:#FFFFFF;"
+                                    >
                                         <span>🚦 SCENARIO 🚦</span>
-                                    </a>
+                                    </button>
+
                                     <select id="scenario" class="scenario-filter">
                                         <option value="all">All</option>
                                         <option value="road">Road</option>
@@ -298,6 +309,18 @@
                                         <option value="specialcase">Special Case</option>
                                         <option value="disaster">Disaster</option>
                                     </select>
+
+                                    <div
+                                        id="scenario-description"
+                                        class="filter-description"
+                                        role="region"
+                                        aria-label="Scenario description"
+                                        hidden
+                                    >
+                                        <p class="filter-description-text">
+                                            Scenario description will be added here.
+                                        </p>
+                                    </div>
                                 </div>
 
                                 <!-- ROADTYPE -->
