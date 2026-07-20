@@ -240,7 +240,10 @@ summary {
   border: 1px solid #ccd6e0;
   border-radius: 10px;
   box-shadow: 0 5px 18px rgba(0, 31, 63, 0.22);
-  text-align: left;
+
+  /* Justify all text inside the description panel */
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 1.45;
 }
 
@@ -251,6 +254,9 @@ summary {
 .filter-description-text {
   margin: 0;
   font-size: 15px;
+  color: #0056b3;
+  font-weight: 600;
+  text-align: justify;
 }
 
 /* Night theme */
@@ -260,6 +266,10 @@ body.theme-night .filter-description {
   color: #eaf2ff;
   border-color: #24364f;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.45);
+}
+
+body.theme-night p.filter-description-text {
+  color: #FFD84D !important;
 }
 
 /* Mobile layout */
