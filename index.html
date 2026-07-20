@@ -232,10 +232,17 @@
                         <div class="w3-center resources" style="margin-top: 11px; margin-bottom: 25px;">
                             <div class="button-group" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                                 <!-- WEATHER -->
-                                <div style="display: flex; flex-direction: column; align-items: center;">
-                                    <a class="btn" id="weather-btn" style="background:#001F3F; color: #FFFFFF;">
+                                <div class="filter-option">
+                                    <button
+                                        class="btn filter-info-btn"
+                                        id="weather-btn"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="weather-description"
+                                        style="background:#001F3F; color:#FFFFFF;"
+                                    >
                                         <span>🌦️ WEATHER 🌦️</span>
-                                    </a>
+                                    </button>
 
                                     <select id="weather" class="weather-filter">
                                         <option value="all">All</option>
@@ -244,6 +251,18 @@
                                         <option value="rain">Rain</option>
                                         <option value="snow">Snow</option>
                                     </select>
+
+                                    <div
+                                        id="weather-description"
+                                        class="filter-description"
+                                        role="region"
+                                        aria-label="Weather description"
+                                        hidden
+                                    >
+                                        <p class="filter-description-text">
+                                            Weather description will be added here.
+                                        </p>
+                                    </div>
                                 </div>
 
                                 <!-- SCENARIO -->
