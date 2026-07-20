@@ -73,7 +73,6 @@ Clone or open this repository, then start a local HTTP server from the project r
 
 ```bash
 cd Filter-Scenes-TSBOW/
-
 # Start the local server and open the viewer
 ./local_open_TSBOW_filter_scenes.sh
 ```
@@ -82,8 +81,6 @@ or
 
 ```bash
 cd Filter-Scenes-TSBOW/
-
-# Start the local server and open the viewer
 ./local_run_TSBOW_filter_scenes.sh
 ```
 
