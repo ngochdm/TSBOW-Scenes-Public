@@ -345,16 +345,37 @@
                                 </div>
 
                                 <!-- ROADTYPE -->
-                                <div style="display: flex; flex-direction: column; align-items: center;">
-                                    <a class="btn" id="roadtype-btn" style="background:#001F3F; color: #FFFFFF;">
+                                <!-- MARK: roadtype -->
+                                <div class="filter-option">
+                                    <button
+                                        class="btn filter-info-btn"
+                                        id="roadtype-btn"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="roadtype-description"
+                                        style="background:#001F3F; color:#FFFFFF;"
+                                    >
                                         <span>🛣️ ROAD TYPE 🛣️</span>
-                                    </a>
+                                    </button>
+
                                     <select id="roadtype" class="roadtype-filter">
                                         <option value="all">All</option>
                                         <option value="urban">Urban</option>
                                         <option value="standard">Standard</option>
                                         <option value="boulevard">Boulevard</option>
                                     </select>
+
+                                    <div
+                                        id="roadtype-description"
+                                        class="filter-description"
+                                        role="region"
+                                        aria-label="Road type description"
+                                        hidden
+                                    >
+                                        <p class="filter-description-text">
+                                            Road type description will be added here.
+                                        </p>
+                                    </div>
                                 </div>
 
                                 <!-- SCALE -->
